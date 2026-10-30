@@ -61,7 +61,7 @@ Abre `mi-proyecto-spa/index.html` en el navegador; el sitio no necesita servidor
 - **Repositorio:** [Proyecto-GS-SCSS-CSS-TAREA](https://github.com/valentinoaguiarhirales1-art/Proyecto-GS-SCSS-CSS-TAREA)
 - **Sitio:** `https://valentinoaguiarhirales1-art.github.io/Proyecto-GS-SCSS-CSS-TAREA/` (disponible cuando GitHub Pages esté habilitado y termine el flujo de publicación).
 
-En GitHub, configura **Settings → Pages → Build and deployment → GitHub Actions**. El flujo de la carpeta `.github/workflows/` compila Sass y publica `gathsession-project/mi-proyecto-spa/` al subir cambios a `main` o `master`. Para entregar la tarea, comparte el repositorio y la dirección publicada, y adjunta la captura en la plataforma de clase.
+El flujo de la carpeta `.github/workflows/` intenta habilitar GitHub Pages automáticamente, compila Sass y publica `gathsession-project/mi-proyecto-spa/` al subir cambios a `main` o `master`. Si la cuenta no permite habilitar Pages automáticamente —por ejemplo, por la visibilidad privada del repositorio o el plan de GitHub—, configura **Settings → Pages → Build and deployment → GitHub Actions** o cambia la visibilidad según lo que requiera la entrega. Cuando el despliegue termine, comparte el repositorio y la dirección publicada, y adjunta la captura en la plataforma de clase.
 
 ## Licencia
 
