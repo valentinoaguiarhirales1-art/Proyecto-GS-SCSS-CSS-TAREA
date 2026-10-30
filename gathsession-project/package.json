@@ -1,0 +1,14 @@
+{
+  "name": "gathsession-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Responsive GathSession landing page built with HTML and Sass.",
+  "scripts": {
+    "build": "sass mi-proyecto-spa/scss/style.scss mi-proyecto-spa/css/style.css --no-source-map",
+    "watch": "sass --watch mi-proyecto-spa/scss/style.scss:mi-proyecto-spa/css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
+  },
+  "license": "MIT"
+}

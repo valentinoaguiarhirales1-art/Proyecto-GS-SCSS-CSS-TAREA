@@ -1,0 +1,61 @@
+@use 'sass:color';
+@use '../global/variables' as *;
+
+.btn {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 0;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+
+  &--primary {
+    min-width: 144px;
+    padding: 0 24px;
+    background: $primary-pink;
+    color: $text-light;
+    box-shadow: 0 10px 24px rgba($primary-pink, 0.18);
+
+    &:hover {
+      transform: translateY(-2px);
+      background: color.adjust($primary-pink, $lightness: 5%);
+    }
+  }
+
+  &--link {
+    color: $text-light;
+
+    &:hover {
+      color: $primary-pink;
+
+      .btn__arrow {
+        transform: translateX(4px);
+      }
+    }
+  }
+
+  &__arrow {
+    width: 17px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.6;
+    transition: transform 180ms ease;
+  }
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 28px;
+}

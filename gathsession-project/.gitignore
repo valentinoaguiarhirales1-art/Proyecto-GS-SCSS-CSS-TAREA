@@ -1,0 +1,9 @@
+node_modules/
+.sass-cache/
+*.css.map
+npm-debug.log*
+/mi-proyecto-spa/scss/**/*.css
+
+.DS_Store
+Thumbs.db
+desktop.ini

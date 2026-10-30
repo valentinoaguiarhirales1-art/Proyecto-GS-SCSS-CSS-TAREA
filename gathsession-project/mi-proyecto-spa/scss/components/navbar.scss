@@ -1,0 +1,74 @@
+@use '../global/variables' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: clamp(64px, 9vh, 96px);
+
+  &__logo {
+    flex-shrink: 0;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -0.06em;
+    transition: color 180ms ease;
+
+    &:hover {
+      color: $primary-pink;
+    }
+  }
+
+  &__logo-highlight,
+  &__logo-dot {
+    color: $primary-pink;
+  }
+}
+
+.navbar {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: clamp(20px, 3vw, 38px);
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    padding: 8px 0;
+    color: $text-gray;
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 180ms ease;
+
+    &:hover,
+    &--active {
+      color: $text-light;
+    }
+
+    &--active::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      border-radius: 2px;
+      background: $primary-pink;
+      content: "";
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 56px;
+  }
+
+  .navbar__list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+  }
+}

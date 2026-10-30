@@ -1,0 +1,26 @@
+@use '../global/variables' as *;
+
+h1,
+p {
+  margin: 0;
+}
+
+.hero-content {
+  &__title {
+    max-width: 620px;
+    color: $text-light;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(46px, 4.5vw, 62px);
+    font-weight: 700;
+    letter-spacing: -0.045em;
+    line-height: 1.04;
+  }
+
+  &__description {
+    max-width: 440px;
+    margin-top: 24px;
+    color: $text-gray;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+}
